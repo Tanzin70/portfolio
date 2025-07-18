@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link:hover{
+    background-color:rgb(97, 95, 95);
+    border:none;
+}
+.social-media{
+    cursor: pointer;
+    
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay p {
+  font-size: 0.95rem;
+}
+
